@@ -102,7 +102,7 @@ h2 { font-size: 6rem;  font-weight: 600; }
 
 /* overview */
 .overview { padding: 40px 0 100px ;}
-.overview .overview_box { padding: 70px 100px; max-width: 1200px; border:  var(--font-color); margin: 0 auto; }
+.overview .overview_box { padding: 70px 100px; max-width: 1200px; border: 1px solid  var(--font-color); margin: 0 auto; }
 .overview h3 { text-align: left;}
 .overview .top { display: flex; justify-content: center; gap: 30px;}
 .overview .top .txt > li { font-size: 1.7rem;}
