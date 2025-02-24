@@ -1,0 +1,597 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 16px × 0.625 = 10px */
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  color: #101010;
+}
+
+#main .inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* portfolio_title section */
+.portfolio_title h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  text-align: left;
+  display: flex;  
+  margin: 100px 140px 90px 0;
+  align-items: center;
+}
+
+.portfolio_title h2::before {
+  content: "";
+  display: inline-block;       
+  width: 10px;                  
+  height: 1em;                 
+  background-color: #007BFF;  
+  margin-right: 20px;          
+  transform: translate(center)
+}
+
+.portfolio_title p {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #676767;
+  margin-bottom: 5px;
+}
+
+.portfolio_title .sub_txt {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #999999;
+  margin-bottom: 100px;
+}
+
+
+/* 프로젝트 개요 section */
+.overview {
+  display: flex;
+  justify-content: center;
+  max-width: 1320px;
+  margin-bottom: 10px;
+}
+
+.portfolio_img {
+  flex: 1;
+  height: 40rem;
+}
+
+.portfolio_img img {
+  width: 100%;
+  height: 40rem;
+  border-radius: 5px;
+}
+
+
+.overview_box {
+  margin: 0 0 0 10px;
+  padding: 30px 100px 0 30px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.overview_box h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.overview_box dl {
+  list-style: none;
+  color: #767676;
+}
+
+.overview_box dl dt {
+  font-size: 1.6rem;
+}
+
+.overview_box dl dd {
+  margin-bottom: 20px;
+  display: flex;             
+  align-items: flex-start;   
+  gap: 10px;              
+  line-height: 1.6; 
+}
+
+
+/* 요구사항 */
+.requirements_box {
+  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.requirements_box h3{
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 200px auto 50px;
+}
+
+.requirements_ul {
+  font-size: 2rem;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.requirements_ul li {
+  display: flex;
+  align-items: flex-start; 
+  background: #F7F8FA;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  padding: 25px 95px;
+  gap: 10px
+}
+
+/* 체크 기호 */
+.requirements_ul i {
+  flex-shrink: 0;
+  color: #101010; 
+  margin-right: 8px; 
+  font-size: 1.9rem;
+  font-weight: 900;
+  margin-top: 5px;
+}
+
+strong {
+  font-weight: 800;
+  color: #101010;
+  display: inline-block;
+  margin-right: 3px;
+  white-space: nowrap;
+}
+
+
+
+/* our solution */
+.solution_section {
+  text-align: center;
+  position: relative;
+  padding: 50px 0;
+}
+
+/* 타이틀 */
+.solution_title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+/* 컨테이너 */
+.solution_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 50px;
+  border-bottom: #ddd solid 2px;
+  margin-bottom: 200px;
+}
+
+/* 중앙 세로선 */
+.solution_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  height: 95%;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+/* As-is, To-be 박스 */
+.solution_box {
+  flex: 1;
+  text-align: center;
+  padding-top: 0;
+  z-index: 2;
+}
+
+.solution_header {
+  position: relative;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* As-is, To-be 양옆 여백 */
+}
+
+.to_be .solution_header {
+  margin-bottom: 70px;
+}
+
+/* 가로선 */
+.solution_header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  transform: translateY(-50%);
+}
+
+.solution_header h3 {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px; /* 양옆 여백 */
+  font-size: 3.6rem;
+  font-weight: 700;
+  background-color: #fff; /* 선 위를 가리기 위한 배경색 */
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.to_be .solution_header h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+
+.solution_box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.solution_box li {
+  font-size: 1.8rem;
+  margin-bottom: 90px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* To-be 강조 */
+.solution_box.to_be h3 {
+  color: #007BFF;
+}
+.to_be li {
+  color: #007BFF;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+
+.to_be li strong {
+  color: #007BFF;
+  font-weight: 600;
+}
+
+/* 중앙 화살표 */
+.solution_arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  background-color: #004E81;
+  color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+
+.solution_arrow i {
+  font-size: 4rem;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .solution_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+
+/* ui 화면 section*/
+.ui_screen {
+  margin-bottom: 200px;
+  text-align: center;
+  max-width: 1420px;
+}
+
+.ui_screen h3 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.ui_screen_gallery {
+  max-width: 1420px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.ui_screen_gallery img {
+  max-width: 1420px;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ui_screen_gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* 프로젝트 갤러리 */
+.project_gallery h3 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+/* 포트폴리오 (ul)*/
+  .portfolio_item { 
+    display: grid; grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; max-width: 1520px; 
+    margin: 0 auto; 
+    list-style: none; 
+    padding-left: 0; }
+  
+  /* 포트폴리오 (li) */
+  .portfolio_item .portfolio_list {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 25px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  /* 포트폴리오 링크 */
+.portfolio_item .portfolio_list a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+  /* 이미지 */
+  .portfolio_item .portfolio_list img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* 오버레이 */
+  .portfolio_item .portfolio_list .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FAFAFA;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  }
+ .portfolio_list .overlay_txt {
+    position: absolute; top: 100px;
+    padding-left: 30px;
+  }
+  .portfolio_list .overlay_txt h4 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    padding-bottom: 8px;
+    color: #FAFAFA;
+  }
+  .portfolio_list .overlay_txt p {
+    font-size: 1.6rem;
+    font-weight: 500;
+  } 
+
+
+  /* skill */
+  .portfolio_list .skill {
+    position: absolute; bottom: 20px; 
+    padding-left: 30px;
+    display: flex; flex-wrap: wrap;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .portfolio_list .skill > li {
+    border-radius: 15px;
+    border: 1px solid #FDFDFD;
+    padding: 1px 5px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+
+  /* system */
+  .portfolio_list .overlay .system {
+    position: absolute; top: 15px; right: 15px;
+    font-size: 2.6rem;
+    font-weight: 600;
+   /*  border: 2px solid #FDFDFD; border-radius: 25px; */
+    padding: 2px 16px 3px;
+  }
+
+  
+/* 호버 효과 */
+  .portfolio_item .portfolio_list:hover .overlay {
+   display: none;
+  }
+
+  .portfolio_item .portfolio_list:hover .overlay {
+    background: rgba(0, 0, 0, 0);
+    
+  }
+  
+  .portfolio_item .portfolio_list:hover img {
+    transform: scale(1);
+  }
+
+.project_gallery {
+  position: relative;
+}
+
+
+
+/* 더보기 */
+.view_more_div {
+position: absolute;
+right: 40px;
+top: 0;
+}
+
+
+
+.view_more {
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: #010101;
+  text-decoration: none;
+}
+
+/* 더보기 밑줄 */
+.view_more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  padding-right: 15px;
+  background-color: #000;
+}
+
+/* 반쪽 화살표 */
+.view_more::before {
+  content: "";
+  position: absolute;
+  right: -13px; /* 화살표 위치 조정 */
+  bottom: -1px;
+  width: 0.3px;
+  height: 9px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg); /* 반쪽 화살표 만들기 */
+}
+
+.view_more:hover {
+  color: #0056b3;
+  font-weight: 700;
+}
+
+
+
+/* 프로젝트 문의하기 */
+.contact_section {
+  padding: 100px 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.contact_section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact_section p {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.contact_btn {
+  padding: 14px 30px 16px;
+  background-color: #004E81;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact_btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* ===============================
+   반응형
+================================= */
+
+@media screen and (max-width: 1024px) {
+  .solution_comparison {
+    flex-direction: column;
+  }
+
+  .gallery_items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ui_gallery img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project_overview {
+    flex-direction: column;
+  }
+
+  .ui_gallery img {
+    width: 100%;
+  }
+
+  .gallery_card {
+    width: 100%;
+  }
+}
