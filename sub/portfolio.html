@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오</title>
+
+  <!-- meta -->
+  <meta name="keywords" content="포트폴리오">
+  <meta name="description" content="소나무정보기술의 IT 솔루션 개발 포트폴리오">
+
+  <!-- opengraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="포트폴리오">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="images/common/og_img.png">
+  <meta property="og:description" content="성공적인 IT 프로젝트 사례를 확인하세요.">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../images/common/favicon.svg" type="image/x-icon">
+
+  <!-- font -->
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/portfoli.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+  <!-- common -->
+  <link rel="stylesheet" href="../css/common.css">
+
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1><a href="../index.html"><img src="../images/common/logo.png" alt="로고"></a></h1>
+
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="History.html">회사소개</a>
+              <ul class="depth2">
+                <li><a href="History.html">연혁</a></li>
+                <li><a href="Certificate.html">인증 및 자격</a></li>
+                <li><a href="Directions.html">오시는 길</a></li>
+              </ul><!-- //depth2 -->
+            </li>
+            <li>
+              <a href="businessfield.html">핵심분야</a>
+              <ul class="depth2">
+                <li><a href="businessfield.html">사업분야</a></li>
+                <li><a href="smartcutting.html">Smart Cutting</a></li>
+                <li><a href="digitaltwin.html">디지털트윈</a></li>
+              </ul><!-- //depth2 -->
+            </li>
+            <li>
+              <a href="portfolio.html">포토폴리오</a>
+              <ul class="depth2">
+                <li><a href="portfolio.html">구축사례</a></li>
+              </ul><!-- //depth2 -->
+            </li>
+            <li>
+              <a href="notice.html">고객센터</a>
+              <ul class="depth2">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="resources.html">자료실</a></li>
+              </ul><!-- //depth2 -->
+            </li>
+          </ul><!-- //gnb -->
+
+          <button class="ham">메뉴보기</button>
+
+          <div class="mgnb_wrap">
+            <ul class="mgnb">
+              <li>
+                <a href="History.html">회사소개</a>
+                <ul class="mdepth2">
+                  <li><a href="History.html">연혁</a></li>
+                  <li><a href="Certificate.html">인증 및 자격</a></li>
+                  <li><a href="Directions.html">오시는 길</a></li>
+                </ul><!-- //depth2 -->
+              </li>
+              <li>
+                <a href="businessfield.html">핵심분야</a>
+                <ul class="mdepth2">
+                  <li><a href="businessfield.html">사업분야</a></li>
+                  <li><a href="smartcutting.html">Smart Cutting</a></li>
+                  <li><a href="digitaltwin.html">디지털트윈</a></li>
+                </ul><!-- //depth2 -->
+              </li>
+              <li>
+                <a href="portfolio.html">포토폴리오</a>
+                <ul class="mdepth2">
+                  <li><a href="portfolio.html">구축사례</a></li>
+                </ul><!-- //depth2 -->
+              </li>
+              <li>
+                <a href="notice.html">고객센터</a>
+                <ul class="mdepth2">
+                  <li><a href="notice.html">공지사항</a></li>
+                  <li><a href="resources.html">자료실</a></li>
+                </ul><!-- //depth2 -->
+              </li>
+            </ul><!-- //gnb -->
+          </div><!-- //mgnb_wrap -->
+        </nav>
+      </div><!-- //inner -->
+      <div class="depth2_bg"></div>
+    </header>
+
+
+    <!-- 포트폴리오 페이지 -->
+    <main id="portfolio">
+
+      <!-- 포트폴리오 타이틀 -->
+      <section class="portfolio_title">
+        <h2>포트폴리오</h2>
+        <p>다양한 산업 분야에서 성공적으로 수행한 <span>IT 솔루션 프로젝트를 소개합니다.</span></p>
+      </section>
+
+
+
+      <!-- 필터 메뉴 -->
+      <nav class="filter_menu">
+        <button class="active" data-filter="All">ALL</button>
+        <button data-filter="solution">솔루션 개발</button>
+        <button data-filter="web-app">WEB · APP</button>
+        <button data-filter="etc">기타</button>
+      </nav>
+
+      <!-- 포트폴리오 리스트 -->
+      <section class="list">
+
+        <ul class="portfolio_item">
+          <li class="portfolio_list solution">
+            <a href="../sub/portfolio_sub/portfolio_detail_1.html">
+              <img src="../images/sub_portfolio/1Steel.jpg" alt="프로젝트1">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>철스크랩 제조 D사</h3>
+                  <p>폐자원을 재창조하여 시용할 수 있게 만든 프로그램</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">ERP</p>
+              </div><!-- overlay -->
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_2.html">
+              <img src="../images/sub_portfolio/2Macaron.jpg" alt="프로젝트2">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>수제마카롱 제조 D사</h3>
+                  <p>온라인과 MES연동으로 생산과 출고를 한번에<br>
+                    가능하게 한 통합시스템 관리프로그램</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>MSSQL</li>
+                  <li>Android</li>
+                </ul>
+                <p class="system">MES</p>
+              </div><!-- overlay -->
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_3.html">
+              <img src="../images/sub_portfolio/3print.jpg" alt="프로젝트3">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>인쇄 제조 P사</h3>
+                  <P>인쇄업의 모든 프로세스를 전산화한 프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Delphi</li>
+                  <li>Python</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">ERP</p>
+              </div><!-- overlay -->
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_4.html">
+              <img src="../images/sub_portfolio/4car.jpg" alt="프로젝트4">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>자동차 부품 사출성형 H사</h3>
+                  <P>사출성형공장의 생산정보 관리 및 모니터링하는<br>
+                    프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div><!-- overlay -->
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_5.html">
+              <img src="../images/sub_portfolio/5energy.jpg" alt="프로젝트5">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>모빌리티 및 신재생 에너지<br>
+                    전문기업 I사</h3>
+                  <P>주문과 출하를 통합 시스템으로 관리하기 위한 프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_6.html">
+              <img src="../images/sub_portfolio/6wiper.jpg" alt="프로젝트6">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>자동차와이퍼 전문 제조업체 Y사</h3>
+                  <P>와이퍼 품질 향상을 위한 스마트 물류 관리<br>
+                    시스템 구축</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_7.html">
+              <img src="../images/sub_portfolio/7traditional_liquor.jpg" alt="프로젝트7">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>전통주류 제조 G사</h3>
+                  <P>제품 생산과 출고를 하나의 통합시스템으로<br>
+                    관리하기 위한 프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_8.html">
+              <img src="../images/sub_portfolio/8automobile plastics.jpg" alt="프로젝트8">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>자동차 플라스틱 부품 제조 업체 H사</h3>
+                  <P>생산 작업자들의 편의성 및 효율성 향상을 위한<br>
+                    생산관리 프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_9.html">
+              <img src="../images/sub_portfolio/9glass.jpg" alt="프로젝트9">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>고품질 유리 및 샷시 제조 S사</h3>
+                  <P>생산 작업자들의 편의성 및 효율성 향상을 위한<br>
+                    생산관리 프로그램</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list solution">
+            <a href="sub/portfolio_detail_10.html">
+              <img src="../images/sub_portfolio/10food.jpg" alt="프로젝트10">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>식품과 화학사업을 함께<br>
+                    성장시키는 S사</h3>
+                  <P>운송관리시스템</P>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>WINFORM</li>
+                  <li>C# WP</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">MES</p>
+              </div>
+            </a>
+          </li>
+          <!-- 여기까지 솔루션 개발 -->
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_11.html">
+              <img src="../images/sub_portfolio/11booking.jpg" alt="프로젝트11">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>통합예약 커뮤니티 D사</h3>
+                  <p>한곳에서 리조트와 교육까지 한번에~<br>
+                    간편한 스킨스쿠버 예약 플랫폼</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring framework</li>
+                  <li>웹 컴포넌트</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>Javascrip</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_12.html">
+              <img src="../images/sub_portfolio/12wine.png" alt="프로젝트12">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>와인커뮤니티 플랫폼 W사</h3>
+                  <p>와인 모임과 레스토랑 예약까지 도입된<br>
+                    플랫폼 서비스</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring framework</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>Javascrip</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_13.html">
+              <img src="../images/sub_portfolio/13smart_saftey.jpg" alt="프로젝트13">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>스마트 안전관리 K공사</h3>
+                  <p>안전하고 편리하게 스마트한 교통관리 플랫폼</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring framework</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>Javascrip</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_14.html">
+              <img src="../images/sub_portfolio/14steal.jpg" alt="프로젝트14">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>스틸가공 전문 업체 H사</h3>
+                  <p>입고, 발주, 조회등 모바일로 관리하는<br>
+                    내손안의 작은 ERP</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Android</li>
+                  <li>Java</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">APP</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_15.html">
+              <img src="../images/sub_portfolio/15car.jpg" alt="프로젝트15">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>자동차 플라스틱 부품 제조 업체 H사</h3>
+                  <p>실시간 재고, 출고 관리 모바일 MES</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Android</li>
+                  <li>Java</li>
+                  <li>MSSQL</li>
+                </ul>
+                <p class="system">APP</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_16.html">
+              <img src="../images/sub_portfolio/16network.jpg" alt="프로젝트16">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>네트워크 플랫폼 W사</h3>
+                  <p>농장체험과 지역특산품 구매까지 한번에<br>
+                    해결한 플랫폼 서비스</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring framework</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>Javascrip</li>
+                  <li>결제 API</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_17.html">
+              <img src="../images/sub_portfolio/17order.jpg" alt="프로젝트17">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>무인주문 태블릿 주문관리 M사</h3>
+                  <p>간편한 터치로 부담없이 주문 및 결제 이용가능<br>
+                    테이블오더서비스</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>scss</li>
+                  <li>Android</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_18.html">
+              <img src="../images/sub_portfolio/18digital.jpg" alt="프로젝트18">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>디지털 아카이브 J사</h3>
+                  <p>조선통신사 기록물을 디지털로 간편하게<br>
+                    볼 수 있는 플랫폼</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>Spring framework</li>
+                  <li>HTML5</li>
+                  <li>css</li>
+                  <li>Javascript</li>
+                  <li>AR</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list web-app">
+            <a href="sub/portfolio_detail_19.html">
+              <img src="../images/sub_portfolio/19education.jpg" alt="프로젝트19">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>교육망 전산관리 S사</h3>
+                  <p>교육기관의 안정적인 인터넷 사용환경을 위한<br>
+                    사이트</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>HTML5</li>
+                  <li>css</li>
+                  <li>Javascript</li>
+                  <li>Spring framework</li>
+                  <li>MYSQL</li>
+                </ul>
+                <p class="system">반응형</p>
+              </div>
+            </a>
+          </li>
+          <!-- 여기까지 WEB-APP -->
+
+          <li class="portfolio_list etc">
+            <a href="sub/portfolio_detail_20.html">
+              <img src="../images/sub_portfolio/20smart.jpg" alt="프로젝트20">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>스마트가드레일</h3>
+                  <p>도로구간 차량사고 발생 골든타임 사수 프로그램</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C#</li>
+                  <li>Python</li>
+                  <li>Yolo</li>
+                  <li>MYSQL</li>
+                </ul>
+                <p class="system">모니터링</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio_list etc">
+            <a href="sub/portfolio_detail_21.html">
+              <img src="../images/sub_portfolio/21digital.jpg" alt="프로젝트21">
+              <div class="overlay">
+                <div class="overlay_txt">
+                  <h3>디지털 아카이브 J사</h3>
+                  <p>온라인 가상 3D 전시 프로그램</p>
+                </div><!-- overlay_txt -->
+                <ul class="skill">
+                  <li>C3D Modeling</li>
+                  <li>360° Panorama Rendering</li>
+                  <li>Panorama Stitchin</li>
+                  <li>3D Vista Virtual Tour</li>
+                </ul>
+                <p class="system">3D 모델링</p>
+              </div>
+            </a>
+          </li> <!-- 여기까지 기타 -->
+
+        </ul>
+      </section><!-- portfolio_list -->
+
+
+      <!-- 페이지네이션 -->
+      <nav class="pagination">
+        <a href="#" class="prev-page">&lt;</a> <!-- 이전 페이지 -->
+        <a href="#" class="current-page">1</a> <!-- 현재 페이지 -->
+        <a href="#" class="next-page">&gt;</a> <!-- 다음 페이지 -->
+      </nav>
+
+    </main>
+
+    <section class="contact">
+      <h4>프로젝트 문의하기</h4>
+      <p class="contact_txt">비즈니스 성장을 위한 최적의 IT 솔루션을 지원해드립니다.</p>
+      <a href="contact.html" class="contact_button">무료 상담 신청하기</a>
+    </section>
+
+
+  </div><!-- wrap -->
+
+
+  <footer id="footer">
+    <div class="inner">
+
+      <div class="footer_logo">
+        <img src="../images/common/logo.png" alt="">
+      </div><!-- //footer_logo -->
+
+      <ul class="footer_txt">
+        <li>회사명 주식회사 소나무정보기술</li>
+        <li>대표자 최재영</li>
+        <li>사업자등록번호 735-86-01813</li>
+        <li>개발센터 부산광역시 사상구 대동로 303 부산디지털벨리 1203호</li>
+        <li>연락처 (051) 714-0034</li>
+        <li>본사 부산광역시 부산진구 엄광로 176 331호 (동의대학교 산학협력단)</li>
+        <li class="copy">Copyright &copy; 2025 소나무정보기술, All Rights Reserved.</li>
+      </ul><!-- //footer_txt -->
+
+    </div><!-- //inner -->
+  </footer>
+
+
+  <!-- js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter_menu button");
+      const portfolioItems = document.querySelectorAll(".list .portfolio_list");
+
+      filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+          // 버튼 활성화 스타일 관리
+          filterButtons.forEach(btn => btn.classList.remove("active"));
+          this.classList.add("active");
+
+          const filterValue = this.getAttribute("data-filter");
+
+          // 포트폴리오 아이템 필터링
+          portfolioItems.forEach(item => {
+            if (filterValue === "All") {
+              item.classList.remove("hidden"); // 모든 항목 표시
+            } else if (item.classList.contains(filterValue)) {
+              item.classList.remove("hidden"); // 필터에 맞는 항목 표시
+            } else {
+              item.classList.add("hidden");    // 나머지 항목 숨김
+            }
+          });
+        });
+      });
+    });
+
+    /* 필터 메뉴 클릭시 색상변경 */
+    const filterButtons = document.querySelectorAll('.filter_menu button');
+
+    const filterColors = {
+      "All": "#004E81",    // 파란색
+      "solution": "#004E81",
+      "web-app": "#004E81",
+      "etc": "#004E81"
+    };
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // 모든 버튼의 active 클래스 제거
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active');
+          btn.style.setProperty('--active-color', 'transparent'); // 초기화
+        });
+
+        // 클릭한 버튼에 active 클래스 추가
+        button.classList.add('active');
+
+        // data-filter 속성 값을 가져옴
+        const filterType = button.getAttribute('data-filter');
+        const activeColor = filterColors[filterType] || "#004E81"; // 기본색상
+
+        // 클릭한 버튼의 ::before 색상 변경
+        button.style.setProperty('--active-color', activeColor);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
