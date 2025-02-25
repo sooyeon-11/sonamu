@@ -1,0 +1,136 @@
+@charset "utf-8";
+.mgnb_wrap {z-index: 10; margin: 85px 0;}
+
+
+/* main */
+
+.main {padding-top: 100px;  padding-bottom: 100px;}
+.main .main_text_top h1 {font-size: 5rem; padding-bottom: 16px; color: #101010;}
+.main .main_text_top p { line-height: 1.8;}
+
+.main .main_bg { background: url(../images/History/main.png) no-repeat; background-size: cover ;  max-width: 800px;  height: 500px; margin: 70px auto 40px; color: #fff; position: relative; } 
+.main .main_bg .main_bg_text {position: absolute; text-align: center; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; opacity: 0;}
+.main .main_bg .main_bg_text h1 {font-size: 3rem;}
+.dark_overlay {position: absolute;  top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);}
+.main_bg .main_bg_text span {-webkit-text-stroke: 1px #fff; -webkit-text-fill-color: transparent;}
+
+@media (max-width:1100px) {
+    .main .main_bg {background: url(../images/History/main.png) no-repeat center/ cover; margin: 40px auto; max-width: 1100px;}
+    .dark_overlay {background: rgba(0, 0, 0, 0.5);}
+    .main .main_text_top h1 {font-size: 4rem;}
+    .main .main_text_top p {font-size: 1.2rem;}
+    .main .main_bg .main_bg_text h2 {color: #fff;}
+}
+
+@media (max-width:500px) {
+    .main .main_bg {margin: 20px auto 30px;}
+    .main .main_text_top h1 {font-size: 2.5rem;}
+    .main .main_text_top p {font-size: 1rem;}
+    .main .main_bg_text h2 {font-size: 2rem;}
+}
+
+
+
+/* 연도-고정 */
+.main .main_year_bottom { position:relative; display: flex; justify-content: space-between; text-align: center; align-items:center; width: 100%; font-size: 1.3rem; color: #D9D9D9;  margin: 110px auto 0;  transition: border-color 0.5s ease-in-out; background: #fff; border-top: 1px solid #D9D9D9; z-index: 10;}
+.main_year_bottom .progress {  position: absolute;  width: 0; height: 2px; top: -20px;  left: 0;   transform: translateY(-50%); background-color: var(--main-color); transition: width 0.3s ease-in-out; }
+.main_year_bottom.fixed {position: fixed; top: 0; /* left: 50%; transform: translateX(-50%); */ width: 100vw; background: #fff; z-index: 7;; transition: all 0.3s ease-in-out; border-top: 1px solid #D9D9D9; transition: none; margin: 30px auto; max-width: 1720px;}
+.main .main_year_bottom .fixed_area {position: relative; width: 100%;  max-width: 1300px; margin: 0 auto;}
+.main_year_bottom::before { content: "";position: absolute; width: 100vw; height: 120px; ;z-index: -1;  background: #fff; top: 50%; left: 50%; transform: translate(-50%,-52%);}
+
+.main .main_year_bottom .fixed_area ul { display: flex; justify-content: space-between; width: 100%;  padding-top: 20px;  align-items: center; }
+.main .main_year_bottom .fixed_area ul::before {content: "";position: absolute; top: 0; left: 0; width: 100%; height: 110px; z-index: -1; border-top: 1px solid #D9D9D9}
+.main_year_bottom ul li {position: relative; text-align: center;}
+.main_year_bottom ul li i {position: absolute; display: block; width: 16px; height: 16px;  top: -20px; left: 50%; transform: translate(-50%,-50%);  background: #d9d9d9;  border-radius: 50%; transition: background-color 0.3s ease-in-out;}
+.main_year_bottom ul li.active {color: var(--main-color);}
+.main_year_bottom ul li.active i {border-color: var(--main-color); background-color: var(--main-color)}
+
+@media (max-width:1100px) {
+    .main .main_year_bottom {margin: 20px auto 0;}
+    .main_year_bottom ul li span {font-size: 1.2rem;}
+.main_year_bottom ul li {font-size: 0;}
+}
+
+@media (max-width:500px) {
+    .main .main_year_bottom  {margin: 50px auto 0;}
+    .main .main_year_bottom.fixed {margin: 40px auto;}
+}
+
+
+@media (max-width:480px) {
+    .main .main_year_bottom  {margin: 40px auto 0;}
+}
+
+
+
+/* History */
+.History .inner { line-height: 3.5; padding-top: 200px; justify-content: center; position: relative; width: 100%;}
+.sec3 .inner { padding-top: 100px;}
+.History .sec_img {position: relative;}
+.History .History_text {position: absolute; display: flex; flex-direction: column; justify-content: center; color: #fff;  width: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.History .History_text::before {content: ""; height: calc(100% - 60px); width: 2px; position: absolute; left: 50%; transform: translateX(-50%);   transition: height 0.5s ease-in-out;  background: #D9D9D9; }
+
+.History .History_text .year {position: absolute; font-size: 25rem; opacity: 0.05; font-weight: 400; white-space: nowrap; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+
+.History .timeline_text {  position: relative; display: flex; align-items: center;  width: 50%; padding: 10px 20px; font-size: 1.4rem; --dot-color: #d9d9d9; opacity: 0;  transition: opacity 0.5s ease-in-out;} 
+.History .timeline_text.show {  transform: translateY(0); animation: fadeInUp 0.8s forwards; opacity: 1; }
+.History .timeline_text.hide {opacity: 0;  animation: none; transition: opacity 0.5s ease-in-out;}
+.History .History_text span {color: #F0A550;}
+
+.History .timeline_text:nth-child(odd) { text-align: left; justify-content: flex-end;  align-self: flex-start; }
+.History .timeline_text:nth-child(even) { text-align: right; justify-content: flex-start; align-self: flex-end;}
+
+
+/* 기본 점 스타일 */
+.History .timeline_text:nth-child(odd)::before, .History .timeline_text:nth-child(even)::before { content: "";
+position: absolute; display: block; width: 13px; height: 13px; border-radius: 50%; transition: background-color 0.3s ease-in-out;  background: #D9D9D9; }
+
+.History .timeline_text:nth-child(odd)::before { right: -6px;}
+.History .timeline_text:nth-child(even)::before { left: -7px;}
+.History .timeline_text.active::before {background-color: #F0A550;}
+
+.History .History_text.active::before { height: var(--line-percentage);}
+
+/* History img */
+.History .History_sec3_img { background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/History/section-1/history_2020.png) no-repeat center / cover; height: 800px; max-width: 1920px; background-blend-mode: multiply;}
+.History .History_sec4_img { background:linear-gradient(#013354, #00101B), url(../images/History/section-1/history_2021.png)no-repeat center / cover;; height: 800px; max-width: 1920px; width: 100%; background-blend-mode: multiply;}
+.History .History_sec5_img { background: linear-gradient(#013354, #00101B), url(../images/History/section-1/history_2022.png)no-repeat center / cover;; height: 800px; max-width: 1920px; width: 100%; background-blend-mode: multiply;}
+.History .History_sec6_img { background: linear-gradient(#013354, #00101B), url(../images/History/section-1/history_2023.png)no-repeat center / cover;; height: 800px; max-width: 1920px; width: 100%; background-blend-mode: multiply;}
+.History .History_sec7_img { background: linear-gradient(#013354, #00101B), url(../images/History/section-1/history_2024.png)no-repeat center / cover;; height: 800px; max-width: 1920px; width: 100%; background-blend-mode: multiply;}
+.History .History_sec8_img { background: linear-gradient(#013354, #00101B),url(../images/History/section-1/history_2025.png)no-repeat center / cover;; height: 800px; max-width: 1920px; width: 100%; background-blend-mode: multiply;}
+
+.sec_img {transform: scale(1);}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width:1100px) {
+   .timeline_text {font-size: 1.5rem; padding: 20px 20px; line-height: 1.4;}
+    .History .History_text::before {content: ""; height: calc(100% - 50px); top:26px;}
+   
+}
+
+
+@media (max-width:500px) {
+    .History .History_text .year { font-size: 8rem;}
+    .History .timeline_text {font-size: 1.2rem; padding: 20px 20px; line-height: 1.4;}
+    .History .History_text::before {content: ""; height: calc(100% - 70px); top:30px; transform: matrix(-77%);}
+   .History .History_sec6_img, .History .History_sec7_img {height: 1200px;}
+}
+
+@media (max-width:480px) {
+    .History .History_text .year { font-size: 8rem;}
+    .History .timeline_text {font-size: 1.2rem; padding: 20px 20px; line-height: 1.4;}
+    .History .History_text::before {content: ""; height: calc(100% - 90px); top:41px; transform: matrix(-77%);}
+   .History .History_sec6_img, .History .History_sec7_img {height: 1200px;}
+}
+
+
+#footer {padding-top: 100px;}
